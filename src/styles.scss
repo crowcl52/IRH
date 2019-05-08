@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";  
+
+$primary-red: #DE2033;
+
+html, body{
+    height: 100%;
+}
+
+.bg-primary{
+    background: $primary-red!important;
+}
+
+.txt-primary{
+    color: $primary-red!important;
+}
+
+.cursor{
+    cursor: pointer;
+}
