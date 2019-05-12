@@ -1,0 +1,53 @@
+section{
+    overflow: hidden;
+}
+
+.banner-img{
+    background-image: url('../../assets/HISTORIA-Banner.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 110%;
+}
+
+.line{
+    width: 300px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.time-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-text{
+    background: #DDDDDD;
+    width: 80%;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.circle-time-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.circle-time{
+    border: 5px solid #DE2033;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+@media only screen and (max-width: 1199px) {
+    .circle-time-wrapper{
+        justify-content: center!important;
+    }
+  }

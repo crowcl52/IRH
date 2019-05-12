@@ -5,6 +5,7 @@ import { HistoriaComponent } from './historia/historia.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ConvocatoriasComponent } from './convocatorias/convocatorias.component';
+import { ContactViewComponent } from './contact-view/contact-view.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'documentos', component: DocumentosComponent },
   { path: 'eventos-y-capacitaciones', component: EventosComponent },
   { path: 'convocatorias', component: ConvocatoriasComponent },
+  { path: 'contacto', component: ContactViewComponent },
   { path: '**', redirectTo: '' },
 ];
 

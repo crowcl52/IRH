@@ -12,6 +12,7 @@ import { HistoriaComponent } from './historia/historia.component';
 import { DocumentosComponent } from './documentos/documentos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ConvocatoriasComponent } from './convocatorias/convocatorias.component';
+import { ContactViewComponent } from './contact-view/contact-view.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ConvocatoriasComponent } from './convocatorias/convocatorias.component'
     HistoriaComponent,
     DocumentosComponent,
     EventosComponent,
-    ConvocatoriasComponent
+    ConvocatoriasComponent,
+    ContactViewComponent
   ],
   imports: [
     BrowserModule,

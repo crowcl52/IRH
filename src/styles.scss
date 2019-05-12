@@ -2,14 +2,32 @@
 @import "~bootstrap/dist/css/bootstrap.css";  
 
 $primary-red: #DE2033;
-$normal-text: gray;
+$normal-text: #989898;
+$normal-text2: #555555;
 
 html, body{
     height: 100%;
 }
 
+a,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 , h5, .h1, .h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;    
+}
+
 .bg-primary{
     background: $primary-red!important;
+}
+
+.red-texture{
+    background-image: url('./assets/TEXTURA_Roja.jpg');
+}
+
+.gray-texture{
+    background-image: url('./assets/TEXTURA_Blanco.jpg');
 }
 
 .txt-primary{
@@ -27,4 +45,22 @@ html, body{
 .normal-text{
     color: $normal-text;
     font-size: 24px;
+}
+
+.normal-text2{
+    color: $normal-text2;
+}
+
+.banner{
+    height: 200px;
+    width: 100%;
+}
+
+.d-title{
+ color: $normal-text2;
+}
+
+.d-text{
+    color: $normal-text;
+    font-size: .9rem;
 }

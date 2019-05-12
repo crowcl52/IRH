@@ -1,3 +1,95 @@
-<p>
-  eventos works!
-</p>
+<section class="container-fluid m-0 p-0">
+  <div class="banner banner-img"></div>
+  <!-- parte 1 -->
+  <div class="mb-0  py-5">
+    <h1 class="txt-primary text-center h1"> NUESTROS EVENTOS PASADOS </h1>
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide>
+        <img class="full-w" [src]="images[0]" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3 class="txt-primary">01 MARZO <br>
+            CAPACITACIÓN</h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. Donec
+            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+            justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+            dictum felis eu pede mollis pretium. Integer tincidunt.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img class="full-w" [src]="images[1]" alt="Random second slide">
+        <div class="carousel-caption">
+          <h3 class="txt-primary">01 MARZO <br>
+            CAPACITACIÓN</h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. Donec
+            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+            justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+            dictum felis eu pede mollis pretium. Integer tincidunt.
+          </p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img class="full-w" [src]="images[2]" alt="Random third slide">
+        <div class="carousel-caption">
+          <h3 class="txt-primary">01 MARZO <br>
+            CAPACITACIÓN</h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+            natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+            pretium quis, sem. Nulla consequat massa quis enim. Donec
+            pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+            justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam
+            dictum felis eu pede mollis pretium. Integer tincidunt.
+          </p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <div class="mt-5 gray-texture py-5">
+      <h1 class="txt-primary text-center h1"> CALENDARIO DE EVENTOS </h1>
+      <div class="row mt-5">
+        <div class="col-xl-4 col-12 text-center">
+          <h2 class="h1"> 01 MARZO <br>
+            CAPACITACIÓN </h2>
+          <p class="d-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="col-xl-4 col-12 text-center">
+          <h2 class="h1"> 01 MARZO <br>
+            CAPACITACIÓN </h2>
+          <p class="d-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+        <div class="col-xl-4 col-12 text-center">
+          <h2 class="h1"> 01 MARZO <br>
+            CAPACITACIÓN </h2>
+          <p class="d-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

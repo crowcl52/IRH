@@ -1,30 +1,97 @@
-<nav class="navbar navbar-expand-lg navbar-light  bg-primary main-nav">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light red-texture main-nav">
+  <button (click)="openMenu = true" class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-around">
     <a class="navbar-brand" href="#">
-      <img src="./assets/logo-nav.png" width="70" alt="IRH">
+      <img src="./assets/logo-nav.png" width="100" alt="IRH">
     </a>
     <ul class="navbar-nav  mt-2 mt-lg-0">
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/']"  > inicio </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/']"> inicio </a>
       </li>
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/historia']"  > historia </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/historia']"> historia </a>
       </li>
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/documentos']"  > documentos </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/documentos']"> documentos </a>
       </li>
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/eventos-y-capacitaciones']"  > eventos y capacitaciones </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/eventos-y-capacitaciones']"> eventos y
+          capacitaciones </a>
       </li>
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/convocatorias']"  > convocatorias </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/convocatorias']"> convocatorias </a>
       </li>
-      <li class="nav-item" routerLinkActive="active" >
-        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/documentos']"  > contacto </a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/contacto']"> contacto </a>
+      </li>
+      <li class="nav-item ml-5">
+        <a class="mr-3" href="https://www.facebook.com/IRHJal/" target="_blank">
+          <img width="30" src="./assets/REDES-BLANCO-FB.png" alt="facebbok">
+        </a>
+        <a class="mr-3" href="https://twitter.com/IRHjalisco" target="_blank">
+          <img width="30" src="./assets/REDES-BLANCO-Twitter.png" alt="Twitter">
+        </a>
+        <a class="mr-3" href="https://www.youtube.com/channel/UCQYdYq8eWBzgaeEeKUYgWhQ" target="_blank">
+          <img width="30" src="./assets/thumbnail_REDES-BLANCO-YouTube.png" alt="YouTube">
+        </a>
       </li>
     </ul>
   </div>
 </nav>
+<!-- Movile menu -->
+<div *ngIf="openMenu" class="nav-modal">
+  <p class="close" (click)="openMenu=false"> X </p>
+  <div class="row mt-5">
+    <div class="col-12 text-center mt-5">
+      <img src="./assets/logo-nav.png" width="100" alt="IRH">
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/']"> inicio </a>
+      </li>
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/historia']"> historia </a>
+      </li>
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/documentos']"> documentos </a>
+      </li>
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/eventos-y-capacitaciones']"> eventos y
+          capacitaciones </a>
+      </li>
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/convocatorias']"> convocatorias </a>
+      </li>
+    </div>
+    <div class="col-12">
+      <li class="nav-item text-center h1" routerLinkActive="active">
+        <a class="nav-link text-white text-uppercase cursor" [routerLink]="['/contacto']"> contacto </a>
+      </li>
+    </div>
+    <div class="col-12 text-center mt-3">
+        <li class="nav-item">
+            <a class="mr-3" href="https://www.facebook.com/IRHJal/" target="_blank">
+              <img width="60" src="./assets/REDES-BLANCO-FB.png" alt="facebbok">
+            </a>
+            <a class="mr-3" href="https://twitter.com/IRHjalisco" target="_blank">
+              <img width="60" src="./assets/REDES-BLANCO-Twitter.png" alt="Twitter">
+            </a>
+            <a class="mr-3" href="https://www.youtube.com/channel/UCQYdYq8eWBzgaeEeKUYgWhQ" target="_blank">
+              <img width="60" src="./assets/thumbnail_REDES-BLANCO-YouTube.png" alt="YouTube">
+            </a>
+          </li>
+    </div>
+  </div>
+</div>
