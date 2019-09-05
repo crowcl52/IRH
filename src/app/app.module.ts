@@ -13,6 +13,8 @@ import { DocumentosComponent } from './documentos/documentos.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { ConvocatoriasComponent } from './convocatorias/convocatorias.component';
 import { ContactViewComponent } from './contact-view/contact-view.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { ContactViewComponent } from './contact-view/contact-view.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
     NgbModule
   ],
   providers: [],

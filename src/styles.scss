@@ -64,3 +64,16 @@ h1, h2, h3, h4 , h5, .h1, .h2{
     color: $normal-text;
     font-size: .9rem;
 }
+
+@media only screen and (max-width: 1199px) {
+    .img-small{
+        width: 40%;
+    }
+    h1,h2{
+        font-size: 1.5rem!important;
+    }
+
+    h3, h4{
+        font-size: 1rem!important;
+    }
+  }
